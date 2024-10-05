@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            background-color: red;
+            width: 100px;
+            height: 25px;
+            cursor: pointer;
+            position: relative;
+        }
+        h2 {
+            color: #fff;
+            position: absolute;
+            top: -200%;
+            left: 0;
+        }
+        .block:hover h2 {
+            top: -20px;
+        }
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            margin-top: 10px;
+            position: absolute;
+            left: 8px;
+            top: 40px;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        
+        @keyframes animation {
+            0% {
+                left: 8px;
+                top: 40px;
+            }
+            100% {
+                left: 100px;
+            }
+
+            /* 0%, 100% {
+                width: 100px;
+                height: 50px;
+            }
+            50% {
+                width: 500px;
+                height: 300px;
+            }
+            70% {
+                background-color: red;
+            }
+            20% {
+                margin: 50%;
+            } */
+            
+        }
+        @keyframes animation1{
+            0% {
+                margin-left: 0;
+            }
+            25% {
+                margin-top: 0;
+                margin-left: 90%; 
+            }
+            50% {
+                margin-top: 90%;
+                margin-left: 90%;
+            }
+            75% {
+                margin-top: 90%;
+                margin-left: 0;
+            }
+
+            
+        }
+        .container {
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;  
+            position: relative;
+            top: 110px;
+            display: flex;
+        }
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            animation-name: animation1;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+        .transformbox {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 200px;
+            left: 700px;
+            animation-name: transformbox;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        @keyframes transformbox {
+            0% {
+                border-top-left-radius: 50%;
+                background-color: yellow;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                /* animation-timing-function: ; */
+            }
+            25% {
+                background-color: red;
+                border-top-right-radius: 50%;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            50% {
+                background-color: green;
+                border-bottom-right-radius: 50%;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                                
+            }
+            75% {
+                background-color: brown;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 0;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+            100% {
+                border-top-left-radius: 50%;
+                background-color: yellow;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <h2>hello</h2>
+    </div>
+    <div class="box"></div>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+    <div class="transformbox"></div>
+
+</body>
+</html>

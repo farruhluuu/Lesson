@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            background-color: skyblue;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .border {
+            border: 1px solid black;
+        }
+        .header, .center, .footer{
+            width: 600px;
+        }
+        .header, .footer{
+            height: 200px;
+        }
+
+        .center{
+            height: 220px;
+            display: flex;
+        }
+        .sidebar{
+            flex-grow: 2;
+        }
+        .content{
+            flex-grow: 2;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="border header"></div> -->
+            <div class="border center">
+                <div class="border sidebar"></div>
+                <div class="border content"></div>
+            </div>
+        <!-- <div class="border footer"></div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-page {
+      width: 650px;
+      height: 500px;
+      margin-top: 50px;
+      background-color: white;
+      -webkit-box-shadow: 4px 4px 55px 21px rgba(0, 144, 255, 0.2);
+      -moz-box-shadow: 4px 4px 55px 21px rgba(0, 144, 255, 0.2);
+      box-shadow: 4px 4px 55px 21px rgba(0, 144, 255, 0.2);
+      border-radius: 20px;
+    }
+
+    .header {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+      gap: 340px;
+      align-items: center;
+    }
+
+    .product-1,
+    .product-2 {
+      width: 100%;
+      height: 160px;
+      display: flex;
+    }
+
+    .photo-rpoduct-1 img {
+      width: 120px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .inform-text {
+      width: 220px;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .inform-text h1 {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    .inform-text p {
+      margin-top: -20px;
+      margin-left: 30px;
+    }
+
+    .inform-text input {
+      margin-left: 30px;
+
+    }
+
+    .count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 150px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .count button {
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 25px;
+
+    }
+
+    .price {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      width: 130px;
+    }
+
+    .footer {
+      width: 100%;
+      height: 115px;
+      display: flex;
+      flex-direction: column;     
+      margin-left: 450px;
+    }
+
+    .block {
+      width: 220px;
+      height: 50px;
+      display: flex;
+    }
+
+    .btn button {
+      background-color: rgb(126, 199, 255);
+      padding: 10px 80px;
+      border: none;
+      border-radius: 50px;
+      margin-top: 5px;
+      margin-left: -25px;
+    }
+
+    .box-1 h4 {
+      font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 0px;
+    }
+    .box-1 p {
+      margin-top: -24px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 12px;
+    }
+    .box-2 h1 {
+      margin-top: 4px;
+      margin-left: 28px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .box-1 {
+      margin-left: -20px;
+      margin-right: 20px;
+    }
+    button:active {
+      opacity: .6;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="product-page">
+    <header class="header">
+      <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Shopping Cart</h3>
+      <a style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: red;" href="#">Remove all</a>
+    </header>
+
+    <div class="product-1">
+      <div class="photo-rpoduct-1">
+        <img src="./MIXED-FRUIT-front.jpg" alt="">
+      </div>
+      <div class="inform-text">
+        <h1>Apple Juice</h1>
+        <p>250ml</p>
+        <input type="radio">
+      </div>
+      <div class="count">
+        <button>+</button>
+        <h3>2</h3>
+        <button>-</button>
+      </div>
+      <div class="price">
+        <h3>$2.99</h3>
+        <a style="color: rgb(0, 153, 255);" href="#">Save for later</a>
+        <a style="color: red;" href="#">Remove</a>
+      </div>
+    </div>
+    <div class="product-1">
+      <div class="photo-rpoduct-1">
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/51aD8i8BRQL._AC_UL600_SR600,600_.jpg" alt="">
+      </div>
+      <div class="inform-text">
+        <h1>Grapes Juice</h1>
+        <p>250ml</p>
+        <input type="radio">
+      </div>
+      <div class="count">
+        <button>+</button>
+        <h3>1</h3>
+        <button>-</button>
+      </div>
+      <div class="price">
+        <h3>$3.19</h3>
+        <a style="color: rgb(0, 153, 255);" href="#">Save for later</a>
+        <a style="color: red;" href="#">Remove</a>
+      </div>
+    </div>
+    <hr width="470px" style="border: 1px solid; margin-left: 170px;">
+    <footer class="footer">
+      <div class="block">
+        <div class="box-1">
+          <h4>Sub-Total</h4>
+          <p>2 items</p>
+        </div>
+        <div class="box-2">
+          <h1>$6.18</h1>
+        </div>
+      </div>
+      <div class="btn">
+        <button>Checkout</button>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

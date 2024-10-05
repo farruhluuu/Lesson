@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      
+    }
+    .container {
+      width: 665px;
+      height: 480px;
+      padding: 22px;
+      display: flex;
+      background-color: rgb(245, 245, 245);
+      
+    }
+    .left {
+      background-color: #5A61ED;
+      position: relative;
+      width: 137px;
+    }
+    .left h1 {
+      color: #fff;
+      transform: rotate(-90deg);
+      margin: 0;
+      position: absolute;
+      bottom: 50px;
+      right: -22px;
+      
+    }
+    .rigth {
+      padding: 20px;
+      width: 527px;
+    }
+    .form{
+      display: flex;
+      flex-wrap: wrap;      
+    }
+    .title p {
+      margin-top: -20px;
+    }
+    .text-input {
+      width: 200px;
+    }
+    .text-input input {
+      display: flex;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .text-input select {
+      display: flex;
+    }
+    
+    .text-input-item {
+      display: flex;
+      justify-content: space-between;
+    }
+    .gender {
+      display: flex;
+      width: 160px;
+
+    }
+    .form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .input1 {
+        margin-top: 5px;
+    }
+    .button {
+      margin-left: 329px;
+      margin-top: -16px;
+    }
+    .reset {
+      margin-top: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Sign up</h1>
+    </div>
+    <div class="rigth">
+
+      <div class="title">
+        <h2>New user? </h2>
+        <p>Use the form below to create your account.</p>
+      </div>
+
+      <div class="form">
+        <div class="text-input">
+          <label style="color: #7C7C7C;" for="">First Name</label>
+          <input style="border: none; outline: none; border-bottom: 1px solid #F2F2F2;" class="input1" value="Alice" type="text">
+        </div>
+        <div class="text-input">
+          <label style="color: #7C7C7C;" for="">Last Name</label>
+          <input style="border: none; outline: none; border-bottom: 1px solid #F2F2F2; " value="Miller" type="text">
+        </div>
+        <div style="margin-top: 8px;" class="text-input">
+          <label style="color: #7C7C7C;" for="">Nationality</label>
+          <select style="width: 202px; border: none; outline: none; border-bottom: 1px solid #F2F2F2;" style="margin-top: 4px;" name="" id="">
+            <option value="">Kyrgyz</option>
+            <option value="">Kazakh</option>
+            <option value="">Uzbek</option>
+          </select>
+        </div>
+        <div style="margin-top: 8px;" class="text-input">
+          <label style="color: #7C7C7C;" for="">E-mail</label>
+          <input style="border: none; outline: none; border-bottom: 1px solid #F2F2F2; margin-top: 4px;" class="E-mail" value="alice.miller@yahoo.com" type="email">
+        </div>
+        <div style="margin-top: 20px;" class=" text-input">
+          <label style=" color: #7C7C7C;" for="">Date of Birth</label>
+          <div style="border: none; outline: none; border-bottom: 1px solid #F2F2F2; margin-top: 10px;" class="text-input-item">
+            <select style=" border: none; outline: none;" name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+              <option value="">13</option>
+              <option value="">14</option>
+              <option value="">15</option>
+              <option value="">16</option>
+              <option value="">17</option>
+              <option value="">18</option>
+              <option value="">19</option>
+              <option value="">20</option>
+              <option value="">21</option>
+              <option value="">22</option>
+              <option value="">23</option>
+              <option value="">24</option>
+              <option value="">25</option>
+              <option value="">26</option>
+              <option value="">27</option>
+              <option value="">28</option>
+              <option value="">29</option>
+              <option value="">30</option>
+              <option value="">31</option>
+            </select>
+            <select style="border: none; outline: none;" name="" id="">
+              <option value="">December</option>
+              <option value="">November</option>
+              <option value="">October</option>
+              <option value="">September</option>
+              <option value="">Jeniore</option>
+            </select>
+            <select style="border: none; outline: none;" name="" id="">
+              <option value="">1995</option>
+              <option value="">1996</option>
+              <option value="">1997</option>
+              <option value="">1998</option>
+              <option value="">1999</option>
+              <option value="">2000</option>
+              <option value="">2001</option>
+              <option value="">2002</option>
+              <option value="">2003</option>
+              <option value="">2004</option>
+              <option value="">2005</option>
+              <option value="">2006</option>
+              <option value="">2007</option>
+              <option value="">2008</option>
+              <option value="">2009</option>
+              <option value="">2010</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top: 20px; margin-right: 76px;">
+          <label style="color: #7C7C7C;" for="">Gender</label>
+          <div style="margin-top: 6px; margin-left: -36px; border: none; outline: none; border-bottom: 1px solid #F2F2F2;" class="gender">
+            <input style="margin-left: 36px;" checked name="gender" type="radio">
+            <label for="">Male</label>
+            <input style="margin-left: 40px;" name="gender" type="radio">
+            <label for="">Female</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <div class="reset">
+          Have an account? <a style="color: blue;" href="">Login</a>
+        </div>
+        <div class="button">
+          <button style="width: 150px; height: 28px; outline: none; background-color: #5A61ED;  color: white; border: none;">Complete Signup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 140px; margin-top: 150px; margin-left: -520px;">
+    <label style=" color: #7C7C7C;" for="">Password</label>
+    <input style="width: 200px; border: none; outline: none; border-bottom: 1px solid #F2F2F2;" class="input1" value="" type="password">
+  </div>
+  <div style="width: 140px; margin-top: 150px; margin-left: 140px;">
+    <label style="color: #7C7C7C;" for="">Confirm Password</label>
+    <input style="width: 200px; border: none; outline: none; border-bottom: 1px solid #F2F2F2;;" class="input1" value="" type="password">
+  </div>
+  </div>
+  
+</body>
+</html>
